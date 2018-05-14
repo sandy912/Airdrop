@@ -28,6 +28,12 @@
 	-ms-transition: 0.2s ease-in-out;
 	-o-transition: 0.2s ease-in-out;
 	transition: 0.2s ease-in-out;
+	background: transparent;
+	color: #fff;
+}
+
+.js-float-label-wrapper.focused label {
+	color: #e0e0e0 !important;
 }
 
 /* Form Field Styling */
@@ -90,37 +96,6 @@ textarea:focus {
 
 /* Submit Button */
 
-input[type="submit"]{
-	display: block;
-	width: 320px;
-	border: none;
-	margin: 1em 0;
-	padding: 1em;
-	position: relative;
-	background-color: #6d6;
-	color: #fff;
-
-	background-image: -webkit-radial-gradient( circle, transparent 0%, rgba(0,0,0,0.1) 100% );
-	background-image:    -moz-radial-gradient( circle, transparent 0%, rgba(0,0,0,0.1) 100% );
-	background-image:         radial-gradient( circle, transparent 0%, rgba(0,0,0,0.1) 100% );
-
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-
-	-webkit-border-radius: 0;
-	   -moz-border-radius: 0;
-	        border-radius: 0;
-}
-
-input[type="submit"]:hover{
-	background-color: #7e7;
-}
-
-input[type="submit"]:active{
-	background-color: #5c5;
-}
-
 @media (max-width: 390px) {
   form input[type="text"],
 form input[type="submit"],
@@ -129,6 +104,9 @@ form textarea {
 }
 }
 
+form input[type="submit"] {
+	background: transparent;
+}
 
 
 /* New Age styles */
@@ -604,6 +582,13 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
  #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
    color: #525252;
 	  }
+  header.masthead.mobile-panel {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	.register-panel {
+		padding-top: 50px !important;
+	}
 }
 
 #DateCountdown {
@@ -629,4 +614,16 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 	width: 250px;
 	height: 100px;
 	display: inline-block;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 0.7em;
+}
+
+.register-panel {
+	padding: 120px 10px 0;
+	max-width: 400px;
+	min-width: 320px;
+	margin: 0 auto;
 }
