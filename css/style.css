@@ -203,7 +203,7 @@ section h2 {
 #mainNav .navbar-brand {
   color: #fdcc52;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -218,10 +218,11 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
+	font-weight: 500;
 }
 
 #mainNav .navbar-nav > li > a.active {

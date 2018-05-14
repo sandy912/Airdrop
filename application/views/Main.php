@@ -3,16 +3,18 @@
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img alt="brand" src="<?php echo base_url(); ?>/img/fireflycoin.png" />Firefly Coin</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#download">Download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              <a class="nav-link js-scroll-trigger" href="#buynow">Buy Now</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -112,6 +114,23 @@
               </div>
             </div>
           </div>
+</section>
+<section class="buynow" id="buynow">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2>Buy Now, Thank Yourself!</h2>
+      <p class="text-muted">Currently available on below exchanges, we will add more exchanges soon.</p>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="exchanges">
+        <div class="cryptopia">
+        </div>
+        <div class="yobit">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="cta">
       <div class="cta-content">
