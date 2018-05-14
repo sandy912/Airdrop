@@ -29,7 +29,7 @@
         <div class="row">
             <div class="header-content container-one">
               <h1 class="mb-5">Firefly brings blockchain to the masses. Simple, Easy, day to day micro payments at your finger tips!</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger text-center">Go to Airdrop</a>
+              <a href="#" class="btn btn-outline btn-xl text-center">Go to Airdrop</a>
             </div>
             <div id="DateCountdown" data-date="2018-06-25 00:00:00" style="width:80%;">
           </div>
@@ -119,16 +119,20 @@
   <div class="container">
     <div class="section-heading text-center">
       <h2>Buy Now, Thank Yourself!</h2>
-      <p class="text-muted">Currently available on below exchanges, we will add more exchanges soon.</p>
+      <p class="text-muted">Trading now on below exchanges, we will add more exchanges soon.</p>
       <hr>
     </div>
-    <div class="row">
-      <div class="exchanges">
-        <div class="cryptopia">
+    <div class="row exchanges">
+        <div class="col-lg-6">
+          <div class="cryptopia">
+            <a href="https://www.cryptopia.co.nz/Exchange/?market=FFC_BTC" target="_blank"><span></span></a>
+          </div>
         </div>
-        <div class="yobit">
+        <div class="col-lg-6">
+          <div class="yobit">
+            <a href="https://yobit.net/en/trade/FFC/BTC" target="_blank"><span></span></a>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </section>
@@ -144,9 +148,9 @@
 
 <section class="contact bg-primary" id="contact">
       <div class="container">
-        <h2>We
+        <h2>Join our Awesome
           <i class="fa fa-heart"></i>
-          new friends!</h2>
+          community!</h2>
         <ul class="list-inline list-social">
           <li class="list-inline-item social-twitter">
             <a href="#">

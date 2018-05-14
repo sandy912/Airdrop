@@ -578,6 +578,55 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 	padding-bottom: 40px;
 }
 
+@media (max-width: 640px) {
+	.container-one {
+   padding-top: 15%;
+ }
+ header.masthead .header-content {
+	 margin-bottom: 0;
+ }
+ section h2, section.download h2 {
+	 font-size: 35px;
+ }
+ section.cta .cta-content h2 {
+	 font-size: 35px;
+ }
+ section.features .feature-item h3 {
+	 font-size: 25px;
+ }
+ p {
+	 font-size: 16px;
+ }
+ section.features .feature-item {
+	 padding-top: 25px;
+	 padding-bottom: 25px;
+ }
+ #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
+   color: #525252;
+	  }
+}
+
 #DateCountdown {
 	padding-left: 10%;
+}
+
+.exchanges {
+	margin: 50px auto 0;
+  text-align: center;
+}
+.cryptopia span, .yobit span{
+	background: url("../vendor/assets/cryptopia.jpg") no-repeat;
+	background-size: contain;
+	width: 250px;
+	height: 100px;
+	display: inline-block;
+	background-position-y: 15px;
+}
+
+.yobit span{
+	background: url("../vendor/assets/yobit-logo.png") no-repeat;
+	background-size: contain;
+	width: 250px;
+	height: 100px;
+	display: inline-block;
 }
