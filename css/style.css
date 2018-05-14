@@ -608,7 +608,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 	background-position-y: 15px;
 }
 
-.yobit span{
+.yobit span {
 	background: url("../vendor/assets/yobit-logo.png") no-repeat;
 	background-size: contain;
 	width: 250px;
