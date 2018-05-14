@@ -627,3 +627,9 @@ input, textarea {
 	min-width: 320px;
 	margin: 0 auto;
 }
+
+.mega-airdrop {
+	position: relative;
+  top: 50px;
+  font-weight: 500;
+}

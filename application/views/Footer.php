@@ -26,23 +26,23 @@
 $( '.js-float-label-wrapper' ).FloatLabel();
 $("#DateCountdown").TimeCircles({
     "animation": "smooth",
-    "bg_width": 0.5,
-    "fg_width": 0.01,
-    "circle_bg_color": "#60686F",
+    "bg_width": 0.1,
+    "fg_width": 0.024,
+    "circle_bg_color": "#dbd6d9",
     "time": {
         "Days": {
             "text": "Days",
-            "color": "#ff7466",
+            "color": "#ff8c12",
             "show": true
         },
         "Hours": {
             "text": "Hours",
-            "color": "#ff99f5",
+            "color": "#ef3b4a",
             "show": true
         },
         "Minutes": {
             "text": "Minutes",
-            "color": "#adedff",
+            "color": "#ef43a4",
             "show": true
         },
         "Seconds": {
