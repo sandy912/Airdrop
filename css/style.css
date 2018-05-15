@@ -297,6 +297,10 @@ header.masthead .device-container .screen img {
     padding-top: 0;
     padding-bottom: 0;
   }
+  header.masthead.mobile-panel {
+    height: unset;
+    padding-bottom: 30px;
+  }
   header.masthead .header-content {
     margin-bottom: 0;
     text-align: left;
@@ -551,7 +555,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .container-one {
-	padding-top: 20vh%;
+	padding-top: 20vh;
 	text-align: center !important;
 	padding-bottom: 40px;
 }

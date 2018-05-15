@@ -56,7 +56,7 @@
                 <input id="user_id" name="user_id" type="text" required>
               </div>
               <div>
-                You must follow <a href="https:\\t.me\BlocksToken">Blocks Token</a> on Telegram and stay untill airdrop to receive coins.<br />
+                You must follow <a href="https:\\t.me\BlocksToken" target="_blank">Blocks Token</a> on Telegram and stay untill airdrop to receive coins.<br />
               </div>
 
               <div class="js-float-label-wrapper">
@@ -64,14 +64,14 @@
                 <input id="user_twitter" name="user_id" type="text" required>
               </div>
               <div>
-                You must follow <a href="#">Blocks Token</a> on Twitter and retweet pinned post to receive +100 coins.<br />
+                You must follow <a href="#" target="_blank">Blocks Token</a> on Twitter and retweet pinned post to receive +100 coins.<br />
               </div>
               <div class="js-float-label-wrapper">
                 <label for="user_facebook">Facebook profile url</label>
                 <input id="user_facebook" name="user_id" type="text" required>
               </div>
               <div>
-                You must Like <a href="#">Blocks Token</a> Page on Facebook and share latest post receive +100 coins.<br />
+                You must Like <a href="#" target="_blank">Blocks Token</a> Page on Facebook and share latest post receive +100 coins.<br />
               </div>
 
               <div class="js-float-label-wrapper">

@@ -41,7 +41,8 @@ public function register_user(){
         'user_id'=>$this->input->post('user_id'),
         'user_name'=>$this->input->post('user_name'),
         'user_email'=>$this->input->post('user_email'),
-        'user_wallet'=>$this->input->post('user_wallet'),
+        'user_facebook'=>$this->input->post('user_facebook'),
+        'user_twitter'=>$this->input->post('user_twitter'),
         'user_password'=>md5($this->input->post('user_password')),
         'reffered_by'=> $cookieData
         );
@@ -49,7 +50,7 @@ public function register_user(){
 
       $email_check=$this->user_model->email_check($user['user_email']);
 
-      $wallet_check=$this->user_model->wallet_check($user['user_wallet']);
+      //$wallet_check=$this->user_model->wallet_check($user['user_wallet']);
 
       if($email_check){
         $this->user_model->register_user($user);
@@ -61,15 +62,15 @@ public function register_user(){
         redirect('user');
       }
 
-      if($wallet_check){
-        $this->user_model->register_user($user);
-        $this->session->set_flashdata('success_msg', 'Registered successfully.Now login to your account.');
-        redirect('user/login');
-      }
-      else{
-        $this->session->set_flashdata('error_msg', 'Error: ERC-20 wallet address already exists.');
-        redirect('user');
-      }
+    //  if($wallet_check){
+    //    $this->user_model->register_user($user);
+     //   $this->session->set_flashdata('success_msg', 'Registered successfully.Now login to your account.');
+    //    redirect('user/login');
+    //  }
+    //  else{
+    //    $this->session->set_flashdata('error_msg', 'Error: ERC-20 wallet address already exists.');
+   //     redirect('user');
+     // }
 }
 
 public function login(){
@@ -88,7 +89,8 @@ function login_user(){
         $this->session->set_userdata('user_id',$data['user_id']);
         $this->session->set_userdata('user_email',$data['user_email']);
         $this->session->set_userdata('user_name',$data['user_name']);
-        $this->session->set_userdata('user_wallet',$data['user_wallet']);
+        $this->session->set_userdata('user_facebook',$data['user_facebook']);
+        $this->session->set_userdata('user_twitter',$data['user_twitter']);
         $this->session->set_userdata('user_secret',$data['user_secret']);
 
         $temp = $this->db->where('reffered_by', $data['user_secret'])->count_all_results('user');
