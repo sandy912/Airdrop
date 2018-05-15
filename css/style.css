@@ -322,7 +322,7 @@ header.masthead .device-container .screen img {
   .submenu::before {
     width: 5px;
   }
-  .fa-user-circle-o:hover+.submenu {
+  .nav-link:hover+.submenu {
     display: block;
   }
 }
