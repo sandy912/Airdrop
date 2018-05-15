@@ -325,7 +325,9 @@ header.masthead .device-container .screen img {
     left: -70px;
     top: 40px;
   }
-
+  li.dropdown.open .submenu{
+    display: block;
+  }
   .submenu::after {
     content: "";
     position: absolute;
