@@ -325,9 +325,7 @@ header.masthead .device-container .screen img {
     left: -70px;
     top: 40px;
   }
-  .submenu:hover {
-    display: block;
-  }
+
   .submenu::after {
     content: "";
     position: absolute;
@@ -337,9 +335,6 @@ header.masthead .device-container .screen img {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent black transparent;
-  }
-  .nav-link:hover+.submenu {
-    display: block;
   }
 }
 
