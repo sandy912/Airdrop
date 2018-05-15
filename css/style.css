@@ -291,6 +291,10 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
 }
 
+.submenu {
+  list-style-type: none;
+  padding: 0;
+}
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
