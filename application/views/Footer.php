@@ -57,7 +57,7 @@ $("#DateCountdown").TimeCircles({
       $( this ).toggleClass( 'open' );
     });
 
-    $(document).click( function(){
+    $( 'body:not(dropdown.open)' ).click( function(){
         $('.submenu').hide();
     });
 });
