@@ -52,13 +52,9 @@ $("#DateCountdown").TimeCircles({
         }
     }
 });
-  $(document).ready( function(){
+$(document).ready( function(){
    $( "li.dropdown" ).click(function() {
       $( this ).toggleClass( 'open' );
-    });
-
-    $( 'body:not(dropdown.open)' ).click( function(){
-        $('.submenu').hide();
     });
 });
 </script>
