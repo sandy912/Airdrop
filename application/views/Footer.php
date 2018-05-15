@@ -1,3 +1,21 @@
+
+<footer>
+      <div class="container">
+        <p>&copy; Firefly Coin &copy; 2018. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+</footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -8,23 +26,23 @@
 $( '.js-float-label-wrapper' ).FloatLabel();
 $("#DateCountdown").TimeCircles({
     "animation": "smooth",
-    "bg_width": 0.5,
-    "fg_width": 0.01,
-    "circle_bg_color": "#60686F",
+    "bg_width": 0.1,
+    "fg_width": 0.024,
+    "circle_bg_color": "#dbd6d9",
     "time": {
         "Days": {
             "text": "Days",
-            "color": "#ff7466",
+            "color": "#ff8c12",
             "show": true
         },
         "Hours": {
             "text": "Hours",
-            "color": "#ff99f5",
+            "color": "#ef3b4a",
             "show": true
         },
         "Minutes": {
             "text": "Minutes",
-            "color": "#adedff",
+            "color": "#ef43a4",
             "show": true
         },
         "Seconds": {

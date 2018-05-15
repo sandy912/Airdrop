@@ -3,16 +3,18 @@
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img alt="brand" src="<?php echo base_url(); ?>/img/fireflycoin.png" />Firefly Coin</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#download">Download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              <a class="nav-link js-scroll-trigger" href="#buynow">Buy Now</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -27,8 +29,10 @@
         <div class="row">
             <div class="header-content container-one">
               <h1 class="mb-5">Firefly brings blockchain to the masses. Simple, Easy, day to day micro payments at your finger tips!</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger text-center">Go to Airdrop</a>
+              <a href="/user/register" class="btn btn-outline btn-xl text-center">Go to Airdrop</a>
+              <h3 class="mega-airdrop">Mega Airdrop (worth $250/each) in </h3>
             </div>
+
             <div id="DateCountdown" data-date="2018-06-25 00:00:00" style="width:80%;">
           </div>
         </div>
@@ -113,6 +117,27 @@
             </div>
           </div>
 </section>
+<section class="buynow" id="buynow">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2>Buy Now, Thank Yourself!</h2>
+      <p class="text-muted">Trading now on below exchanges, we will add more exchanges soon.</p>
+      <hr>
+    </div>
+    <div class="row exchanges">
+        <div class="col-lg-6">
+          <div class="cryptopia">
+            <a href="https://www.cryptopia.co.nz/Exchange/?market=FFC_BTC" target="_blank"><span></span></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="yobit">
+            <a href="https://yobit.net/en/trade/FFC/BTC" target="_blank"><span></span></a>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
 <section class="cta">
       <div class="cta-content">
         <div class="container">
@@ -125,9 +150,9 @@
 
 <section class="contact bg-primary" id="contact">
       <div class="container">
-        <h2>We
+        <h2>Join our Awesome
           <i class="fa fa-heart"></i>
-          new friends!</h2>
+          community!</h2>
         <ul class="list-inline list-social">
           <li class="list-inline-item social-twitter">
             <a href="#">
@@ -147,21 +172,4 @@
         </ul>
       </div>
     </section>
-
-<footer>
-      <div class="container">
-        <p>&copy; Firefly Coin &copy; 2018. All Rights Reserved.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
 <?php $this->load->view('footer'); ?>

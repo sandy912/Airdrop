@@ -28,6 +28,12 @@
 	-ms-transition: 0.2s ease-in-out;
 	-o-transition: 0.2s ease-in-out;
 	transition: 0.2s ease-in-out;
+	background: transparent;
+	color: #fff;
+}
+
+.js-float-label-wrapper.focused label {
+	color: #e0e0e0 !important;
 }
 
 /* Form Field Styling */
@@ -90,37 +96,6 @@ textarea:focus {
 
 /* Submit Button */
 
-input[type="submit"]{
-	display: block;
-	width: 320px;
-	border: none;
-	margin: 1em 0;
-	padding: 1em;
-	position: relative;
-	background-color: #6d6;
-	color: #fff;
-
-	background-image: -webkit-radial-gradient( circle, transparent 0%, rgba(0,0,0,0.1) 100% );
-	background-image:    -moz-radial-gradient( circle, transparent 0%, rgba(0,0,0,0.1) 100% );
-	background-image:         radial-gradient( circle, transparent 0%, rgba(0,0,0,0.1) 100% );
-
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-
-	-webkit-border-radius: 0;
-	   -moz-border-radius: 0;
-	        border-radius: 0;
-}
-
-input[type="submit"]:hover{
-	background-color: #7e7;
-}
-
-input[type="submit"]:active{
-	background-color: #5c5;
-}
-
 @media (max-width: 390px) {
   form input[type="text"],
 form input[type="submit"],
@@ -129,6 +104,9 @@ form textarea {
 }
 }
 
+form input[type="submit"] {
+	background: transparent;
+}
 
 
 /* New Age styles */
@@ -203,7 +181,7 @@ section h2 {
 #mainNav .navbar-brand {
   color: #fdcc52;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -218,10 +196,11 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
+	font-weight: 500;
 }
 
 #mainNav .navbar-nav > li > a.active {
@@ -577,6 +556,80 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 	padding-bottom: 40px;
 }
 
+@media (max-width: 640px) {
+	.container-one {
+   padding-top: 15%;
+ }
+ header.masthead .header-content {
+	 margin-bottom: 0;
+ }
+ section h2, section.download h2 {
+	 font-size: 35px;
+ }
+ section.cta .cta-content h2 {
+	 font-size: 35px;
+ }
+ section.features .feature-item h3 {
+	 font-size: 25px;
+ }
+ p {
+	 font-size: 16px;
+ }
+ section.features .feature-item {
+	 padding-top: 25px;
+	 padding-bottom: 25px;
+ }
+ #mainNav .navbar-nav > li > a, #mainNav .navbar-nav > li > a:focus {
+   color: #525252;
+	  }
+  header.masthead.mobile-panel {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	.register-panel {
+		padding-top: 50px !important;
+	}
+}
+
 #DateCountdown {
 	padding-left: 10%;
+}
+
+.exchanges {
+	margin: 50px auto 0;
+  text-align: center;
+}
+.cryptopia span, .yobit span{
+	background: url("../vendor/assets/cryptopia.jpg") no-repeat;
+	background-size: contain;
+	width: 250px;
+	height: 100px;
+	display: inline-block;
+	background-position-y: 15px;
+}
+
+.yobit span {
+	background: url("../vendor/assets/yobit-logo.png") no-repeat;
+	background-size: contain;
+	width: 250px;
+	height: 100px;
+	display: inline-block;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 0.7em;
+}
+
+.register-panel {
+	padding: 120px 10px 0;
+	max-width: 400px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.mega-airdrop {
+	position: relative;
+  top: 50px;
+  font-weight: 500;
 }
