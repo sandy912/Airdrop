@@ -37,6 +37,9 @@ public function register($secret = null){
 
 public function register_user(){
       $cookieData = get_cookie("refferal");
+      if ($cookieData == null) {
+        $cookieData = 000
+      }
       $user=array(
         'user_id'=>$this->input->post('user_id'),
         'user_name'=>$this->input->post('user_name'),
