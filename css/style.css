@@ -319,9 +319,7 @@ header.masthead .device-container .screen img {
   .nav-item.dropdown i {
     font-size: 19px;
   }
-  .navbar-shrink .submenu {
-    display: none !important;
-  }
+
   .submenu {
     position: absolute;
     list-style-type: none;

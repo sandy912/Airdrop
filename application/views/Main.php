@@ -20,7 +20,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#"><i class="fa fa-user-circle-o"></i></a>
+              <i class="fa fa-user-circle-o"></i>
               <ul class="submenu">
                 <li class="nav-item"><a class="nav-link" href="/user/user-profile">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="/user/sign-in">Sign-in</a></li>
