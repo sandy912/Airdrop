@@ -61,14 +61,14 @@
 
               <div class="js-float-label-wrapper">
                 <label for="user_twitter">Twitter Username</label>
-                <input id="user_twitter" name="user_id" type="text" required>
+                <input id="user_twitter" name="user_twitter" type="text" required>
               </div>
               <div>
                 You must follow <a href="#" target="_blank">Blocks Token</a> on Twitter and retweet pinned post to receive +100 coins.<br />
               </div>
               <div class="js-float-label-wrapper">
                 <label for="user_facebook">Facebook profile url</label>
-                <input id="user_facebook" name="user_id" type="text" required>
+                <input id="user_facebook" name="user_facebook" type="text" required>
               </div>
               <div>
                 You must Like <a href="#" target="_blank">Blocks Token</a> Page on Facebook and share latest post receive +100 coins.<br />
