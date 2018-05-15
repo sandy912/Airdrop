@@ -44,31 +44,31 @@
 
             <form role="form" method="post" action="<?php echo base_url('user/register_user'); ?>" >
               <label class="has-float-label">
-                <input id="user_name" type="text" placeholder="John Doe" required/>
+                <input id="user_name" name="user_name" type="text" placeholder="John Doe" required/>
                 <span>Full Name</span>
               </label>
 
               <label class="has-float-label">
-                <input id="user_email" type="email" placeholder="email@example.com" required/>
+                <input id="user_email" name="user_email" type="email" placeholder="email@example.com" required/>
                 <span>Email Address</span>
               </label>
 
             <label class="has-float-label">
-              <input id="user_id" type="text" placeholder="@johndoe" required/>
+              <input id="user_id" name="user_id" type="text" placeholder="@johndoe" required/>
               <span>Telegram username</span>
             </label>
             <div>
               You must follow <a href="https:\\t.me\BlocksToken" target="_blank">Blocks Token</a> on Telegram and stay untill airdrop to receive coins.<br />
             </div>
             <label class="has-float-label">
-              <input id="user_twitter" type="text" placeholder="@johndoe" required/>
+              <input id="user_twitter" name="user_twitter" type="text" placeholder="@johndoe" required/>
               <span>Twitter username</span>
             </label>
             <div>
               You must follow <a href="#" target="_blank">Blocks Token</a> on Twitter and retweet pinned post to receive +100 coins.<br />
             </div>
             <label class="has-float-label">
-              <input id="user_facebook" type="text" placeholder="https://www.facebook.com/john.106" required/>
+              <input id="user_facebook" name="user_facebook" type="text" placeholder="https://www.facebook.com/john.106" required/>
               <span>Facebook username</span>
             </label>
             <div>
@@ -76,7 +76,7 @@
             </div>
 
             <label class="has-float-label">
-              <input type="password" placeholder="••••••••" pattern=".{8,30}" required/>
+              <input type="password"  id="user_password" name="user_password" placeholder="••••••••" pattern=".{8,30}" required/>
               <span>Password</span>
             </label>
             <input class="btn btn-outline btn-xl text-center" type="submit" value="Register" name="register" />
