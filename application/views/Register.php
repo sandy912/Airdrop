@@ -42,44 +42,45 @@
                   }
                    ?>
 
-            <form role="form" method="post" action="<?php echo base_url('user/register_user'); ?>">
-              <div class="js-float-label-wrapper">
-                <label for="user_name">Name</label>
-                <input id="user_name" name="user_name" type="text" required>
-              </div>
-              <div class="js-float-label-wrapper">
-                <label for="user_email">Email Address</label>
-                <input id="user_email" name="user_email" type="email" required title="Invalid Email">
-              </div>
-              <div class="js-float-label-wrapper">
-                <label for="user_id">Telegram Username</label>
-                <input id="user_id" name="user_id" type="text" required>
-              </div>
-              <div>
-                You must follow <a href="https:\\t.me\BlocksToken" target="_blank">Blocks Token</a> on Telegram and stay untill airdrop to receive coins.<br />
-              </div>
+            <form role="form" method="post" action="<?php echo base_url('user/register_user'); ?>" >
+              <label class="has-float-label">
+                <input id="user_name" type="text" placeholder="John Doe" required/>
+                <span>Full Name</span>
+              </label>
 
-              <div class="js-float-label-wrapper">
-                <label for="user_twitter">Twitter Username</label>
-                <input id="user_twitter" name="user_twitter" type="text" required>
-              </div>
-              <div>
-                You must follow <a href="#" target="_blank">Blocks Token</a> on Twitter and retweet pinned post to receive +100 coins.<br />
-              </div>
-              <div class="js-float-label-wrapper">
-                <label for="user_facebook">Facebook profile url</label>
-                <input id="user_facebook" name="user_facebook" type="text" required>
-              </div>
-              <div>
-                You must Like <a href="#" target="_blank">Blocks Token</a> Page on Facebook and share latest post receive +100 coins.<br />
-              </div>
+              <label class="has-float-label">
+                <input id="user_email" type="email" placeholder="email@example.com" required/>
+                <span>Email Address</span>
+              </label>
 
-              <div class="js-float-label-wrapper">
-                <label for="user_password">Password</label>
-                <input id="user_password" name="user_password" type="password" pattern=".{8,30}" required title="Password too short">
-              </div>
+            <label class="has-float-label">
+              <input id="user_id" type="text" placeholder="@johndoe" required/>
+              <span>Telegram username</span>
+            </label>
+            <div>
+              You must follow <a href="https:\\t.me\BlocksToken" target="_blank">Blocks Token</a> on Telegram and stay untill airdrop to receive coins.<br />
+            </div>
+            <label class="has-float-label">
+              <input id="user_twitter" type="text" placeholder="@johndoe" required/>
+              <span>Twitter username</span>
+            </label>
+            <div>
+              You must follow <a href="#" target="_blank">Blocks Token</a> on Twitter and retweet pinned post to receive +100 coins.<br />
+            </div>
+            <label class="has-float-label">
+              <input id="user_facebook" type="text" placeholder="https://www.facebook.com/john.106" required/>
+              <span>Facebook username</span>
+            </label>
+            <div>
+              You must Like <a href="#" target="_blank">Blocks Token</a> Page on Facebook and share latest post receive +100 coins.<br />
+            </div>
 
-              <input class="btn btn-outline btn-xl text-center" type="submit" value="Register" name="register">
+            <label class="has-float-label">
+              <input type="password" placeholder="••••••••" pattern=".{8,30}" required/>
+              <span>Password</span>
+            </label>
+            <input class="btn btn-outline btn-xl text-center" type="submit" value="Register" name="register" />
+
             </form>
             <center><b>Already registered ?</b> <br><a href="<?php echo base_url('user/login'); ?>">Login here</a></center>
             <!--for centered text-->

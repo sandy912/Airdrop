@@ -38,9 +38,8 @@
             <div class="header-content container-one">
               <h1 class="mb-5">Firefly brings blockchain to the masses. Simple, Easy, day to day micro payments at your finger tips!</h1>
               <a href="/user/register" class="btn btn-outline btn-xl text-center">Go to Airdrop</a>
-              <h3 class="mega-airdrop">Mega Airdrop (worth $250/each) in </h3>
+              <h3 class="mega-airdrop">Mega Airdrop (worth $10/each) in </h3>
             </div>
-
             <div id="DateCountdown" data-date="2018-06-25 00:00:00" style="width:80%;">
           </div>
         </div>

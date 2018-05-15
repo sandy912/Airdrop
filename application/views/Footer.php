@@ -23,7 +23,7 @@
 <script  src ="<?php echo base_url();?>js/new-age.js"></script>
 <script src="<?php echo base_url();?>js/inc/TimeCircles.js"></script>
 <script>
-$( '.js-float-label-wrapper' ).FloatLabel();
+//$( '.js-float-label-wrapper' ).FloatLabel();
 $("#DateCountdown").TimeCircles({
     "animation": "smooth",
     "bg_width": 0.1,

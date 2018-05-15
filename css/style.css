@@ -1,42 +1,3 @@
-.js-float-label-wrapper {
-  position: relative;
-}
-
-.js-float-label-wrapper label {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  opacity: 0;
-}
-
-.js-float-label-wrapper.focused label,
-.js-float-label-wrapper.populated label {
-  opacity: 1
-}
-
-.js-float-label-wrapper.focused input,
-.js-float-label-wrapper.populated input,
-.js-float-label-wrapper.focused textarea,
-.js-float-label-wrapper.populated textarea {
-  padding-top: 2em;
-}
-
-.js-float-label-wrapper input,
-.js-float-label-wrapper textarea,
-.js-float-label-wrapper label {
-  -webkit-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -ms-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  background: transparent;
-  color: #fff;
-}
-
-.js-float-label-wrapper.focused label {
-  color: #e0e0e0 !important;
-}
-
 /* Form Field Styling */
 textarea {
   resize: vertical;
@@ -73,21 +34,6 @@ textarea:focus {
   -webkit-outline: none;
   -moz-outline: none;
   outline: none;
-}
-
-/* Demo FloatLabel.js Styling */
-
-.js-float-label-wrapper label {
-  font-weight: 500;
-}
-
-.js-float-label-wrapper.focused label,
-.js-float-label-wrapper.populated label {
-  color: #999;
-}
-
-.js-float-label-wrapper.focused.populated label {
-  color: #666;
 }
 
 /* Submit Button */
@@ -304,6 +250,7 @@ header.masthead .device-container .screen img {
     padding-bottom: 0;
   }
   header.masthead.mobile-panel {
+    min-height: 100vh;
     height: unset;
     padding-bottom: 30px;
   }
@@ -690,4 +637,84 @@ textarea {
   position: relative;
   top: 50px;
   font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(0,0,0,.8);
+}
+
+input {
+  color: rgba(255,255,255, 1);
+  padding: 20px 10px 10px;
+}
+input:focus {
+	color: #fff;
+}
+
+/* floating label css */
+.has-float-label {
+  display: block;
+  position: relative;
+}
+.has-float-label label, .has-float-label > span {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  cursor: text;
+  font-size: 90%;
+  transition: all .2s;
+  color: rgba(255,255,255,0.8);
+}
+.has-float-label select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.has-float-label input, .has-float-label select {
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  font-size: 18px;
+}
+.has-float-label input::-webkit-input-placeholder, .has-float-label select::-webkit-input-placeholder {
+  opacity: 1;
+  transition: all .2s;
+}
+.has-float-label input:-ms-input-placeholder, .has-float-label select:-ms-input-placeholder {
+  opacity: 1;
+  transition: all .2s;
+}
+.has-float-label input::-ms-input-placeholder, .has-float-label select::-ms-input-placeholder {
+  opacity: 1;
+  transition: all .2s;
+}
+.has-float-label input::placeholder, .has-float-label select::placeholder {
+  opacity: 1;
+  transition: all .2s;
+}
+.has-float-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+  opacity: 0;
+}
+.has-float-label input:placeholder-shown:not(:focus):-ms-input-placeholder, .has-float-label select:placeholder-shown:not(:focus):-ms-input-placeholder {
+  opacity: 0;
+}
+.has-float-label input:placeholder-shown:not(:focus)::-ms-input-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-ms-input-placeholder {
+  opacity: 0;
+}
+.has-float-label input:placeholder-shown:not(:focus)::placeholder, .has-float-label select:placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+.has-float-label input:placeholder-shown:not(:focus) + *, .has-float-label select:placeholder-shown:not(:focus) + * {
+  font-size: 18px;
+  opacity: .6;
+  top: 15px;
+  left: 10px;
+  color: #fff;
+}
+input::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+.has-float-label input:focus, .has-float-label select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 1);
 }
