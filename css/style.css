@@ -345,6 +345,9 @@ header.masthead .device-container .screen img {
     border-style: solid;
     border-color: transparent transparent rgb(239, 239, 239) transparent;
   }
+  .nav-item .fa-user-circle-o {
+    padding: 0.5rem;
+  }
 }
 
 .submenu {
