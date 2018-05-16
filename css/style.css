@@ -249,7 +249,7 @@ header.masthead .device-container .screen img {
     padding-bottom: 0;
   }
   header.masthead.mobile-panel {
-    min-height: calc(100vh - 92px);
+    min-height: 100vh;
     height: unset;
     padding-bottom: 30px;
   }
@@ -590,6 +590,11 @@ footer ul li a.active {
   }
   .register-panel {
     padding-top: 50px !important;
+  }
+  .submenu {
+    padding-left: 30px;
+    top: -30px;
+    position: relative;
   }
 }
 
