@@ -14,3 +14,36 @@
       <link rel="stylesheet" type = "text/css" href="<?php echo base_url();?>js/inc/TimeCircles.css" >
     </head>
     <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/#page-top"><img alt="brand" src="<?php echo base_url(); ?>/img/fireflycoin.png" />Firefly Coin</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#buynow">Buy Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <i class="fa fa-user-circle-o"></i>
+              <ul class="submenu">
+                <li class="nav-item"><a class="nav-link" href="/user/user-profile">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="/user/login">Sign-in</a></li>
+                <li class="nav-item"><a class="nav-link" href="/user/register">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
