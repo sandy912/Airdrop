@@ -4,6 +4,7 @@
         <a class="navbar-brand js-scroll-trigger" href="/#page-top"><img alt="brand" src="<?php echo base_url(); ?>/img/fireflycoin.png" />Firefly Coin</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
+          <i class="fa fa-times"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
@@ -23,7 +24,7 @@
               <i class="fa fa-user-circle-o"></i>
               <ul class="submenu">
                 <li class="nav-item"><a class="nav-link" href="/user/user-profile">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="/user/sign-in">Sign-in</a></li>
+                <li class="nav-item"><a class="nav-link" href="/user/login">Sign-in</a></li>
                 <li class="nav-item"><a class="nav-link" href="/user/register">Register</a></li>
               </ul>
             </li>
@@ -37,8 +38,9 @@
         <div class="row">
             <div class="header-content container-one">
               <h1 class="mb-5">Firefly brings blockchain to the masses. Simple, Easy, day to day micro payments at your finger tips!</h1>
+              <p>Machine learning makes our smart contracts the smartest of all</p>
               <a href="/user/register" class="btn btn-outline btn-xl text-center">Go to Airdrop</a>
-              <h3 class="mega-airdrop">Mega Airdrop (worth $10/each) in </h3>
+              <h3 class="mega-airdrop">Airdrop token distribution in</h3>
             </div>
             <div id="DateCountdown" data-date="2018-06-25 00:00:00" style="width:80%;">
           </div>
@@ -94,14 +96,14 @@
                   <div class="feature-item">
                     <i class="icon-user text-primary"></i>
                     <h3>Unique ID</h3>
-                    <p class="text-muted">Unique ID lets you to choose a readable name for your public key.</p>
+                    <p class="text-muted">Unique ID lets you to choose a readable name for your wallet address at free of cost.</p>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="feature-item">
                     <i class="icon-organization text-primary"></i>
                     <h3>Smart Contracts</h3>
-                    <p class="text-muted">Create smart contract yourself for recurring and split payments.</p>
+                    <p class="text-muted">Machine learning helps you to create smart contract easily for recurring and split payments.</p>
                   </div>
                 </div>
               </div>

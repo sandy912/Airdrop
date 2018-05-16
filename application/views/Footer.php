@@ -1,7 +1,7 @@
 
 <footer>
       <div class="container">
-        <p>&copy; Firefly Coin &copy; 2018. All Rights Reserved.</p>
+        <p>FireflyCoin.ml &copy; 2018. All Rights Reserved.</p>
         <ul class="list-inline">
           <li class="list-inline-item">
             <a href="#">Privacy</a>

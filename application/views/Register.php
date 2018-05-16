@@ -69,7 +69,7 @@
             </div>
             <label class="has-float-label">
               <input id="user_facebook" name="user_facebook" type="text" placeholder="https://www.facebook.com/john.106" required/>
-              <span>Facebook username</span>
+              <span>Facebook profile url</span>
             </label>
             <div>
               You must Like <a href="#" target="_blank">Blocks Token</a> Page on Facebook and share latest post receive +100 coins.<br />
@@ -82,8 +82,7 @@
             <input class="btn btn-outline btn-xl text-center" type="submit" value="Register" name="register" />
 
             </form>
-            <center><b>Already registered ?</b> <br><a href="<?php echo base_url('user/login'); ?>">Login here</a></center>
-            <!--for centered text-->
+            <center>Already registered?<br><a href="<?php echo base_url('user/login'); ?>">Login here</a></center>
         </div>
       </div>
     </div>
