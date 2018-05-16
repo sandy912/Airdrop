@@ -24,21 +24,21 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+              <a class="nav-link js-scroll-trigger" href="/#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+              <a class="nav-link js-scroll-trigger" href="/#download">Download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#buynow">Buy Now</a>
+              <a class="nav-link js-scroll-trigger" href="/#buynow">Buy Now</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
             </li>
             <li class="nav-item dropdown">
               <i class="fa fa-user-circle-o"></i>
               <ul class="submenu">
-                <li class="nav-item"><a class="nav-link" href="/user/user-profile">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="/user/login_user">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="/user/login">Sign-in</a></li>
                 <li class="nav-item"><a class="nav-link" href="/user/register">Register</a></li>
               </ul>

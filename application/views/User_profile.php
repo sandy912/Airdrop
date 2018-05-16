@@ -17,9 +17,10 @@ if(!$user_id){
         <center>
           Share the following link with your friends, each successful registration will get you 1000 FFC.
         </center>
-        <br>           
-        <p id="reflink"><?php echo base_url('user/register/'); echo $this->session->userdata('user_secret'); ?><button onclick="copyToClipboard('#reflink')">Copy</button></p>
-
+        <br>
+        <div style="position:relative;">
+        <p id="reflink"><?php echo base_url('user/register/'); echo $this->session->userdata('user_secret'); ?></p><button class="copy-btn" onclick="copyToClipboard('#reflink')">Copy</button>
+        </div>
           <!-- AddToAny BEGIN -->
           <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
             <span>Share on social media:</span>
@@ -55,16 +56,16 @@ if(!$user_id){
 <style>
     #reflink {
       padding: 10px;
-      position: relative;
       border: 1px solid rgba(255,255,255,0.8);
+      font-size: 16px;
     }
-    #reflink button {
+     .copy-btn {
       position: absolute;
       top: 0;
       right: 0;
       background: #f1ac00;
-      border: 1px solid #fff;
-      border-left: 2px solid #fff;
+      border: 2px solid #fff;
+      border-left: 1px solid #fff;
       color: #fff;
       padding: 9px 15px;
     }
@@ -109,4 +110,3 @@ function copyToClipboard(element) {
 </script>
 <?php $this->load->view('footer'); ?>
 <!--<a href="?php echo base_url('user/user_logout');?>" >  <button type="button" class="btn-primary">Logout</button></a>-->
-
