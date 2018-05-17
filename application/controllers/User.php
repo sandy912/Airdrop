@@ -30,7 +30,12 @@ public function register($secret = null){
 
   }
   else {
-     $this->load->view("register");
+     if(!($this->session->userdata('user_secret'))) {
+       $this->load->view('register');
+     }
+     else {
+       redirect('user/profile');
+     }
   }
 
 }
@@ -57,8 +62,21 @@ public function register_user(){
 
       if($email_check){
         $this->user_model->register_user($user);
-        $this->session->set_flashdata('success_msg', 'Registered successfully.Now login to your account.');
-        redirect('user/login');
+
+        //$query = $this->db->query('SELECT `user_secret` FROM `user` WHERE `user_email` = ".$user['user_email']."');
+        $this->db->select('*');
+        $this->db->from('user');
+        $this->db->where('user_email',$user['user_email']);
+
+        if($query=$this->db->get()){
+            $value = $query->row_array();
+        }
+        //else{
+      //    return false;
+      //  }
+        $this->session->set_userdata('user_email',$user['user_email']);
+        $this->session->set_userdata('user_secret', $value['user_secret']);
+        redirect('user/profile');
       }
       else{
         $this->session->set_flashdata('error_msg', 'Email already exists, Please login');
@@ -77,7 +95,12 @@ public function register_user(){
 }
 
 public function login(){
+  if(!($this->session->userdata('user_secret'))) {
     $this->load->view('login');
+  }
+  else {
+    redirect('user/profile');
+  }
 }
 
 function login_user(){
@@ -89,19 +112,9 @@ function login_user(){
     $data=$this->user_model->login_user($user_login['user_email'],$user_login['user_password']);
       if($data)
       {
-        $this->session->set_userdata('user_id',$data['user_id']);
         $this->session->set_userdata('user_email',$data['user_email']);
-        $this->session->set_userdata('user_name',$data['user_name']);
-        $this->session->set_userdata('user_facebook',$data['user_facebook']);
-        $this->session->set_userdata('user_twitter',$data['user_twitter']);
         $this->session->set_userdata('user_secret',$data['user_secret']);
 
-        $temp = $this->db->where('reffered_by', $data['user_secret'])->count_all_results('user');
-        // $query = $this->db->get_where('user', $data['user_secret']);
-        // $temp = $query->num_rows();
-        $this->session->set_userdata('myrefferals',$temp);
-
-        $this->load->view('user_profile');
       }
       else{
         $this->session->set_flashdata('error_msg', 'Incorrect Email or Password');
@@ -111,6 +124,8 @@ function login_user(){
 
 
 function profile(){
+  $temp = $this->db->where('reffered_by', $this->session->userdata('user_secret'))->count_all_results('user');
+  $this->session->set_userdata('myrefferals',$temp);
   $this->load->view('user_profile');
 }
 

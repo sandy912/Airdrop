@@ -1,8 +1,6 @@
 <?php
-$user_id=$this->session->userdata('user_id');
-
-if(!$user_id){
-
+$signedin = $this->session->userdata('user_email');
+if(!$signedin){
   redirect('user/login');
 }
 
