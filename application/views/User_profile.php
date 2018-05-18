@@ -67,7 +67,8 @@ if(!$signedin){
     #reflink {
       padding: 10px;
       border: 1px solid rgba(255,255,255,0.8);
-      font-size: 16px;
+      font-size: 14px;
+      line-height: 24px;
     }
      .copy-btn {
       position: absolute;
