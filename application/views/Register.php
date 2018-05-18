@@ -41,20 +41,21 @@
               <span>Twitter username</span>
             </label>
             <div>
-              You must follow <a href="#" target="_blank">Blocks Token</a> on Twitter and retweet pinned post to receive +100 coins.<br />
+              You must follow <a href="https://twitter.com/CoinFirefly" target="_blank">Firefly Coin</a> on Twitter and retweet pinned post to receive 4$ worth of coins.<br />
             </div>
             <label class="has-float-label">
-              <input id="user_facebook" name="user_facebook" type="text" placeholder="https://www.facebook.com/john.106" required/>
+              <input id="user_facebook" name="user_facebook" type="url" placeholder="https://www.facebook.com/john.doe.106" required/>
               <span>Facebook profile url</span>
             </label>
             <div>
-              You must Like <a href="#" target="_blank">Blocks Token</a> Page on Facebook and share latest post receive +100 coins.<br />
+              You must Like <a href="https://www.facebook.com/fireflycoin/" target="_blank">Firefly Coin</a> Page on Facebook and share latest post to receive 4$ worth of coins.<br />
             </div>
 
             <label class="has-float-label">
               <input type="password"  id="user_password" name="user_password" placeholder="••••••••" pattern=".{8,30}" required/>
               <span>Password</span>
             </label>
+            <p>I hereby acknowledge that I followed Firefly Coin on <a href="https:\\t.me\BlocksToken" target="_blank">Telegram</a>, <a href="https://twitter.com/CoinFirefly" target="_blank">Twitter</a> and <a href="https://www.facebook.com/fireflycoin/" target="_blank">Facebook</a>.</p>
             <input class="btn btn-outline btn-xl text-center" type="submit" value="Register" name="register" />
 
             </form>

@@ -10,10 +10,11 @@ if(!$signedin){
 <header class="masthead mobile-panel">
   <div class="container">
     <div class="row">
-      <div class="register-panel">
+      <div class="register-panel" style="max-width: 550px;">
         <p class="text-center">Firefly Coin - Simple, Easy, day to day micro payments. And helps you to Create your own smart contracts.</p>
         <center>
-          Share the following link with your friends, each successful registration will get you 1000 FFC.
+          <h5>Thank you for signing up for Airdrop!</h5>
+          Now refer your friends to earn more FFC, each successful refferal will get you 10$ worth of FFC.
         </center>
         <br>
         <div style="position:relative;">
@@ -43,10 +44,21 @@ if(!$signedin){
                 </div>
                 <div class="box">
                   <p>Earned FFC</p>
-                  <span><?php echo (($this->session->userdata('myrefferals')*1000)+1000); ?></span>
+                  <span><?php echo (($this->session->userdata('myrefferals')*10)+10); ?>$</span>
                 </div>
           </div>
+          <div style="position:relative; cursor:not-allowed; opacity: 0.6">
+            <label class="has-float-label" style="cursor:not-allowed">
+              <input type="text" id="wallet" name="wallet" placeholder="Wallet Address" style="font-size: 10px; cursor:not-allowed" disabled/>
+              <span style="font-size: 13px; cursor: not-allowed">Wallet Address</span>
+            </label>
+          <button class="copy-btn" style="cursor:not-allowed">Withdraw</button>
+          <div style="cursor:not-allowed">
+            <small style="cursor:not-allowed">On Airdrop ending date or on reaching 40k participants your earned $ will be converted to equivalent FFC. Then you can Withdraw coins to your wallet.</small>
+          </div>
+          </div>
 
+        </div>
       </div>
     </div>
   </div>
@@ -71,18 +83,21 @@ if(!$signedin){
       float: left;
     }
     .a2a_default_style a {
-      padding: 0 7px;
+      padding: 0 5px;
     }
     .outer-box {
       padding-top: 35px;
       text-align: center;
+      margin-bottom: 30px;
     }
     .box {
       width: 100px;
       height: 100px;
       border: 2px solid rgba(255,255,255,0.6);
       display: inline-block;
-      margin-right: 40px;
+    }
+    .box:first-child {
+        margin-right: 30px;
     }
     .box p{
       font-size: 16px;
@@ -93,7 +108,7 @@ if(!$signedin){
     .box span {
       display: block;
       text-align: center;
-      font-weight: bolder;
+      font-weight: 700;
       font-size: 20px;
     }
 </style>

@@ -669,7 +669,7 @@ input:focus {
   cursor: text;
   font-size: 90%;
   transition: all .2s;
-  color: rgba(255,255,255,0.8);
+  color: rgb(255,255,255);
 }
 .has-float-label select {
   -webkit-appearance: none;
@@ -678,7 +678,7 @@ input:focus {
 }
 .has-float-label input, .has-float-label select {
   border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   background: transparent;
   font-size: 18px;
 }
@@ -712,10 +712,9 @@ input:focus {
 }
 .has-float-label input:placeholder-shown:not(:focus) + *, .has-float-label select:placeholder-shown:not(:focus) + * {
   font-size: 18px;
-  opacity: .6;
   top: 15px;
   left: 10px;
-  color: #fff;
+  color: rgba(255,255,255, 0.9);
 }
 input::placeholder {
   color: rgba(255,255,255,0.4);
@@ -724,7 +723,21 @@ input::placeholder {
   outline: none;
   border-color: rgba(255, 255, 255, 1);
 }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0,0,0,0.3) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
 label {
   margin-top: .5rem;
 }
