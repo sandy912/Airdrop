@@ -829,7 +829,7 @@ h1.mb-5 {
 }
 
 .register-banner {
-  background: url("../img/register-banner.png") no-repeat;
+  background: url("../vendor/assets/Register-Banner.png") no-repeat;
   background-size: contain;
   background-position: center;
   margin-right: -200px;
