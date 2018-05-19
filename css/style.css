@@ -592,6 +592,9 @@ footer ul li a.active {
   .register-panel {
     padding-top: 50px !important;
   }
+  .register-panel.register {
+    padding-top: 15px !important;
+  }
   .submenu {
     padding-left: 30px;
     top: -30px;
@@ -823,4 +826,26 @@ h1.mb-5 {
 }
 .withdraw-info small {
   display: block;
+}
+
+.register-banner {
+  background: url("../img/register-banner.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: -200px;
+  margin-left: -200px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .register-banner {
+    margin-right: unset;
+    margin-left: unset;
+    height: 200px;
+    margin-bottom: unset;
+  }
+}
+
+.register-panel.register {
+  padding-top: 85px;
 }
