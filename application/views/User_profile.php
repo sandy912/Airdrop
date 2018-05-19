@@ -13,7 +13,7 @@ if(!$signedin){
       <div class="register-panel" style="max-width: 550px;">
         <p class="text-center">Firefly Coin - Simple, Easy, day to day micro payments. And helps you to Create your own smart contracts.</p>
         <center>
-          <h5>Thank you for signing up for Airdrop!</h5>
+          <h5><b>Thank you for signing up for Airdrop!</b></h5>
           Now refer your friends to earn more FFC, each successful refferal will get you 10$ worth of FFC.
         </center>
         <br>
@@ -41,86 +41,30 @@ if(!$signedin){
                 <div class="box">
                   <p>Invited</p>
                   <span><?php echo $this->session->userdata('myrefferals'); ?></span>
+                  <span>Users</span>
                 </div>
                 <div class="box">
-                  <p>Earned FFC</p>
+                  <p>Earned</p>
                   <span><?php echo (($this->session->userdata('myrefferals')*10)+10); ?>$</span>
+                  <span>Worth FFC</span>
                 </div>
           </div>
-          <div style="position:relative; cursor:not-allowed; opacity: 0.6">
-            <label class="has-float-label" style="cursor:not-allowed">
-              <input type="text" id="wallet" name="wallet" placeholder="Wallet Address" style="font-size: 10px; cursor:not-allowed" disabled/>
-              <span style="font-size: 13px; cursor: not-allowed">Wallet Address</span>
+          <div class="cursor-banned withdraw-info">
+            <label class="has-float-label cursor-banned">
+              <input type="text" id="wallet" name="wallet" class="cursor-banned" placeholder="Wallet Address" style="font-size: 10px;" disabled/>
+              <span class="cursor-banned" style="font-size: 13px;">Wallet Address</span>
             </label>
-          <button class="copy-btn" style="cursor:not-allowed">Withdraw</button>
-          <div style="cursor:not-allowed">
-            <small style="cursor:not-allowed">On Airdrop ending date or on reaching 40k participants your earned $ will be converted to equivalent FFC. Then you can Withdraw coins to your wallet.</small>
+            <button class="copy-btn cursor-banned">Withdraw</button>
+            <div class="cursor-banned">
+              <small class="cursor-banned">On Airdrop ending date or on reaching 40k participants your earned $ will be converted to equivalent FFC based on coin value at distribution time. Then you can Withdraw coins to your wallet.</small>
+            </div>
           </div>
-          </div>
+          <small><b>Warning:</b> If we find any unwanted activities like multiple accounts, bots, etc.. Your earned $ will not be converted to FFC.</small>
 
         </div>
       </div>
     </div>
   </div>
 </header>
-<style>
-    #reflink {
-      padding: 10px;
-      border: 1px solid rgba(255,255,255,0.8);
-      font-size: 14px;
-      line-height: 24px;
-    }
-     .copy-btn {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: #f1ac00;
-      border: 2px solid #fff;
-      border-left: 1px solid #fff;
-      color: #fff;
-      padding: 9px 15px;
-    }
-    .a2a_kit span {
-      float: left;
-    }
-    .a2a_default_style a {
-      padding: 0 5px;
-    }
-    .outer-box {
-      padding-top: 35px;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .box {
-      width: 100px;
-      height: 100px;
-      border: 2px solid rgba(255,255,255,0.6);
-      display: inline-block;
-    }
-    .box:first-child {
-        margin-right: 30px;
-    }
-    .box p{
-      font-size: 16px;
-      padding-top: 10px;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .box span {
-      display: block;
-      text-align: center;
-      font-weight: 700;
-      font-size: 20px;
-    }
-</style>
-<script>
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-</script>
 <?php $this->load->view('footer'); ?>
 <!--<a href="?php echo base_url('user/user_logout');?>" >  <button type="button" class="btn-primary">Logout</button></a>-->
