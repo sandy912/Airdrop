@@ -141,7 +141,7 @@
             </a>
           </li>
           <li class="list-inline-item social-telegram">
-            <a href="https://t.me/firefly_coin" target="_blank">
+            <a href="https://t.me/CoinFirefly" target="_blank">
               <i class="fa fa-telegram"></i>
             </a>
           </li>

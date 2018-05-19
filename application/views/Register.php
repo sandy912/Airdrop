@@ -37,7 +37,7 @@
               <span>Telegram username</span>
             </label>
             <div>
-              You must follow <a href="https://t.me/firefly_coin" target="_blank">Firefly Coin</a> on Telegram and stay untill airdrop to receive coins.<br />
+              You must follow <a href="https://t.me/CoinFirefly" target="_blank">Firefly Coin</a> on Telegram and stay untill airdrop to receive coins.<br />
             </div>
             <label class="has-float-label">
               <input id="user_twitter" name="user_twitter" type="text" placeholder="@johndoe" required/>
@@ -58,7 +58,7 @@
               <input type="password"  id="user_password" name="user_password" placeholder="••••••••" pattern=".{8,30}" required/>
               <span>Password</span>
             </label>
-            <p>I hereby acknowledge that I followed Firefly Coin on <a href="https://t.me/firefly_coin" target="_blank">Telegram</a>, <a href="https://twitter.com/CoinFirefly" target="_blank">Twitter</a> and <a href="https://www.facebook.com/fireflycoin/" target="_blank">Facebook</a>.</p>
+            <p>I hereby acknowledge that I followed Firefly Coin on <a href="https://t.me/CoinFirefly" target="_blank">Telegram</a>, <a href="https://twitter.com/CoinFirefly" target="_blank">Twitter</a> and <a href="https://www.facebook.com/fireflycoin/" target="_blank">Facebook</a>.</p>
             <input class="btn btn-outline btn-xl text-center" type="submit" value="Register" name="register" />
 
             </form>

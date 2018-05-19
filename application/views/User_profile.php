@@ -31,7 +31,7 @@ if(!$signedin){
           </div>
           <script>
           var a2a_config = a2a_config || {};
-          a2a_config.linkname = "Firefly Coin - Simple, Easy, day to day micro payments. Lets you to Create your own smart contracts. Signup for Airdrop and get 1000 FFC";
+          a2a_config.linkname = "🔥Airdrop Firefly Coin🔥 ♦ GET $10 worth FFC coin for Free!! ♦ FFC team decided to relauch the old currency by adding multiple features like Machine Learning(ML) smart contracts, Unique ID, 10,000 TPS😍 #airdrops #airdrop #FFC @CoinFirefly ";
           a2a_config.linkurl = "<?php echo base_url('user/register/'); echo $this->session->userdata('user_secret'); ?>";
           </script>
           <script async src="https://static.addtoany.com/menu/page.js"></script>

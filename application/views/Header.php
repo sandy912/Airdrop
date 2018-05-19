@@ -3,7 +3,11 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Firefly Coin - Secure Mobile Cryptocurrency</title>
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content="https://fireflycoin.ml/vendor/assets/Register-Banner1.png">
+      <meta property="og:title" content="Firefly Coin(FFC) - Get 10$ worth of FFC for Free - World's first blockchain with Machine Learning(ML) SmartContract">
+      <meta property="og:description" content="🔥 Airdrop Firefly Coin 🔥 We Believe the community is the biggest asset. Therefore, we want to spread our love by offering an Airdrop. Register and get 10$ worth  of FFC for Free.">
+      <title>Firefly Coin(FFC) - SmartContracts Based on Machine Learning(ML)</title>
       <link rel='shortcut icon' href='/favicon.png' type='image/x-icon' />
       <link rel="stylesheet" href="<?php echo base_url();?>vendor/bootstrap/css/bootstrap.min.css" media="screen" title="no title">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,9 +43,9 @@
             <li class="nav-item dropdown">
               <i class="fa fa-user-circle-o"></i>
               <ul class="submenu">
-                <li class="nav-item"><a class="nav-link" href="/Airdrop/user/profile">Dashboard</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/Airdrop/user/login">Sign-in</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/Airdrop/user/register">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="/user/profile">Dashboard</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/user/login">Sign-in</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/user/register">Register</a></li>
               </ul>
             </li>
           </ul>
