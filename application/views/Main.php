@@ -5,9 +5,9 @@
         <div class="row">
             <div class="header-content container-one">
               <h1 class="mb-5">Firefly brings blockchain to the masses. Simple, Easy, day to day micro payments at your finger tips!</h1>
-              <p>Machine learning makes our smart contracts the smartest of all</p>
-              <a href="/user/register" class="btn btn-outline btn-xl text-center">Go to Airdrop</a>
-              <h3 class="mega-airdrop">Airdrop token distribution in</h3>
+              <h4 class="ff-desc"><b>World's first blockchain to have it's own Machine Learning(ML) SmartContract.</b></h4>
+              <a href="/user/register" class="btn btn-outline btn-xl text-center text-bold">Go to Airdrop</a>
+              <h3 class="mega-airdrop">New Roadmap, Whitepaper, Team details will be released in</h3>
             </div>
             <div id="DateCountdown" data-date="2018-06-25 00:00:00" style="width:80%;">
           </div>
@@ -31,7 +31,7 @@
                 <div class="device">
                   <div class="screen">
                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                    <img src="img/demo-screen-1.png" class="img-fluid" alt="">
                   </div>
                   <div class="button">
                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -118,7 +118,7 @@
       <div class="cta-content">
         <div class="container">
           <h2>Stop waiting.<br>Start using crypto for daily payments.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Start Free!</a>
+          <a href="/user/register" class="btn btn-outline btn-xl js-scroll-trigger">Start Free!</a>
         </div>
       </div>
       <div class="overlay"></div>
@@ -141,7 +141,7 @@
             </a>
           </li>
           <li class="list-inline-item social-telegram">
-            <a href="https:\\t.me\BlocksToken" target="_blank">
+            <a href="https://t.me/firefly_coin" target="_blank">
               <i class="fa fa-telegram"></i>
             </a>
           </li>
