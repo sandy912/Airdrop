@@ -60,7 +60,9 @@ if(!$signedin){
             </div>
           </div>
           <small><b>Warning:</b> If we find any unwanted activities like multiple accounts, bots, etc.. Your earned $ will not be converted to FFC.</small>
-
+          <br>
+          <br>
+          <p>In case if you missed to follow Firefly Coin on <a href="https://t.me/CoinFirefly" target="_blank">Telegram</a>, <a href="https://twitter.com/CoinFirefly" target="_blank">Twitter</a> and <a href="https://www.facebook.com/fireflycoin/" target="_blank">Facebook</a> during registration. Here are the links to do it now. Only those who follow our social media channels will be eligible for airdrop.</p>
         </div>
       </div>
     </div>
