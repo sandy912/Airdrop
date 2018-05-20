@@ -12,7 +12,7 @@ if(!$signedin){
       <div class="register-panel" style="max-width: 550px;">
         <h4 class="text-center"><b>Thank you for signing up for Airdrop!</b></h4>
         <center>
-          <h5><b>You can Earn a maximum of upto&nbsp;<h4 style="display: inline-block; font-weight: bold">1500$</h4> worth of FFC.</b></h5>
+          <h5><b>Earn upto <h4 style="display: inline-block; font-weight: bold">1500$</h4> by inviting your friends</b></h5>
           Now refer your friends to earn more FFC, each successful refferal will get you <h5 style="display: inline-block; font-weight: bold">10$</h5> worth of FFC.
         </center>
         <br>
