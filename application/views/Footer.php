@@ -2,7 +2,7 @@
 <footer>
       <div class="container">
         <p>FireflyCoin.ml &copy; 2018. All Rights Reserved.</p>
-        <ul class="list-inline">
+        <ul class="list-inline" style="visibility:hidden">
           <li class="list-inline-item">
             <a href="#">Privacy</a>
           </li>

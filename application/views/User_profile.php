@@ -3,7 +3,6 @@ $signedin = $this->session->userdata('user_email');
 if(!$signedin){
   redirect('user/login');
 }
-
  ?>
 <?php $this->load->view('header'); ?>
 
@@ -11,10 +10,10 @@ if(!$signedin){
   <div class="container">
     <div class="row">
       <div class="register-panel" style="max-width: 550px;">
-        <p class="text-center">Firefly Coin - Simple, Easy, day to day micro payments. And helps you to Create your own smart contracts.</p>
+        <h4 class="text-center"><b>Thank you for signing up for Airdrop!</b></h4>
         <center>
-          <h5><b>Thank you for signing up for Airdrop!</b></h5>
-          Now refer your friends to earn more FFC, each successful refferal will get you 10$ worth of FFC.
+          <h5><b>You can Earn a maximum of upto&nbsp;<h4 style="display: inline-block; font-weight: bold">1500$</h4> worth of FFC.</b></h5>
+          Now refer your friends to earn more FFC, each successful refferal will get you <h5 style="display: inline-block; font-weight: bold">10$</h5> worth of FFC.
         </center>
         <br>
         <div style="position:relative;">
@@ -45,7 +44,17 @@ if(!$signedin){
                 </div>
                 <div class="box">
                   <p>Earned</p>
-                  <span><?php echo (($this->session->userdata('myrefferals')*10)+10); ?>$</span>
+                  <span><?php
+                  $amount = (($this->session->userdata('myrefferals')*10)+10);
+
+                    if( $amount > 1500 ) {
+                      echo '1500';
+                    }
+                    else {
+                      echo $amount;
+                    }
+
+                    ?>$</span>
                   <span>Worth FFC</span>
                 </div>
           </div>
