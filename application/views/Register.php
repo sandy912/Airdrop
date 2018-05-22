@@ -23,7 +23,7 @@
 
             <form role="form" method="post" action="<?php echo base_url('user/register_user'); ?>" >
               <label class="has-float-label">
-                <input id="user_name" name="user_name" type="text" placeholder="John Doe" required/>
+                <input id="user_name" name="user_name" type="text" placeholder="John Doe" pattern="^[a-zA-Z][a-zA-Z0-9 ]{1,20}$" title="Enter your name" required/>
                 <span>Full Name</span>
               </label>
 
@@ -40,7 +40,7 @@
               You must follow <a href="https://t.me/CoinFirefly" target="_blank">Firefly Coin</a> on Telegram and stay untill airdrop to receive coins.<br />
             </div>
             <label class="has-float-label">
-              <input id="user_twitter" name="user_twitter" type="text" placeholder="@johndoe" required/>
+              <input id="user_twitter" name="user_twitter" type="text" placeholder="@johndoe" pattern="^[A-Za-z0-9_\.@]{1,25}$" title="Enter twitter username. eg: @xxxxxx" required/>
               <span>Twitter username</span>
             </label>
             <div>

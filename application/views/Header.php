@@ -44,8 +44,8 @@
               <i class="fa fa-user-circle-o"></i>
               <ul class="submenu">
                 <li class="nav-item"><a class="nav-link" href="/user/profile">Dashboard</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/user/login">Sign-in</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/user/register">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="/user/login">Sign-in</a></li>
+                <li class="nav-item"><a class="nav-link" href="/user/register">Register</a></li>
               </ul>
             </li>
           </ul>
